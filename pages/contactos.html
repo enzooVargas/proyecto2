@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--dependencia a Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--nuestro estilo css-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+  <header class="headerContactos">
+    <nav class="navbar navbar-expand-lg bgNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="../img/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active bg-light m-1 itemsBorder" aria-current="page" href="../index.html">Inicio</a><!--se agrego un color blanco bg-light un margin y una clase css para hacer un border-->
+              </li>
+              <li class="nav-item bg-light m-1 itemsBorder "><!--se agrego un color blanco bg-light un margin y una clase css para hacer un border-->
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item dropdown bg-light m-1 itemsBorder "><!--se agrego un color blanco bg-light un margin y una clase css para hacer un border-->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mas sobre nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                  <li><a class="dropdown-item" href="contactos.html">Contactos</a></li>
+                  <li><a class="dropdown-item" href="testimonios.html">Testimonios</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="contenedor">
+      <main class="mainContactos">
+        <section>
+          <h1>¡Contactanos!</h1>
+          <div class="parrafoContactos">
+            <p >¿Tienes alguna pregunta, comentario o simplemente quieres saludarnos? ¡Nos encantaría escucharte! Puedes ponerte en contacto con nosotros fácilmente mediante nuestro formulario de contacto. Simplemente completa los campos a continuación con tu nombre, dirección de correo electrónico,mensaje, etc, y nos aseguraremos de responderte lo antes posible.</p>
+          </div>
+          <div>
+              <form>
+                  <div>
+                      <label for="nombre">Ingrese su nombre</label>
+                      <input type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre">
+                  </div>
+                  <br>
+                  <div>
+                      <label for="apellido">Ingrese su apellido</label>
+                      <input type="text" placeholder="Escribe tu apellido" name="apellido" id="apellido">
+                  </div>
+                  <br>
+                  <div>
+                      <label for="email">*Ingrese su e-mail</label>
+                      <input type="email" placeholder="Ingrese su email" name="email" id="email" required>
+                  </div>
+                  <br>
+                  <div>
+                      <label for="contraseña">*Ingrese su contraseña</label>
+                      <input type="password" placeholder="Ingrese su contraseña" name="contraseña" id="contraseña" required>
+                  </div>
+                  <br>
+                  <div>
+                      <label>Seleccione su genero</label>
+                      <input type="radio" name="hombre">Hombre
+                      <input type="radio" name="mujer">Mujer
+                      <input type="radio" name="otro">Otro
+                   </div>
+                  <br>
+                  <div>
+                      <label for="pais">Selecciona su pais de residencia</label>
+                      <select name="pais" id="pais">
+                          <option value="Argentina">Argentina</option>
+                          <option value="Brasil">Brasil</option>
+                          <option value="Uruguay">Uruguay</option>
+                          <option value="Aparaguay">Paraguay</option>
+                      </select>
+                  </div>
+                  <br>
+                  <div>
+                      <label for="comentarios">Escribe tus comentarios</label>
+                      <br>
+                      <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                  </div>
+                  <br>
+                      <input class="boton" type="submit" value="Enviar formulario">
+                      <input class="boton" type="reset" value="Borrar campos">
+              </form>
+            </div>
+         </section>
+      </main>
+      <aside class="aside1Contactos">
+        <h1>Informacion sobre nuestros empleados</h1>
+        <p>Aquí encontrarás información sobre nuestros empleados, incluyendo sus perfiles. ¡Descubre quiénes son las personas que hacen posible nuestro éxito</p>
+        <section>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Empleado</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Felipe</td>
+                <td>Gonzales</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Maria</td>
+                <td>Perez</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Javier</td>
+                <td>Olivo</td>
+                <td>27</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </aside>
+      <!--Comienzo de aside 2-->
+      <aside class="aside2Contactos">
+        <section class="acordeon">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 Instagram
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>¿Quieres ver contenido exclusivo, detrás de cámaras y estar al tanto de nuestras últimas novedades? ¡Entonces síguenos en Instagram! Encuéntranos en @Fauget_Cafeteria
+                  <img src="../img/instagram.png" alt="icono de instagram">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 Facebook
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Únete a nuestra comunidad en Facebook para no perderte ninguna actualización, promoción especial o evento próximo.Sé parte de nuestra familia virtual. Encuéntranos en facebook como Fauget_Cafeteria.
+                    <img src="../img/facebook.png" alt="icono de facebook">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 Gmail
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>¿Tienes alguna pregunta, comentario o sugerencia? ¡Nos encantaría saber de ti! No dudes en escribirnos a nuestro correo electrónico. Estamos aquí para ayudarte en lo que necesites.¡Estamos ansiosos por escucharte!
+                  Escríbenos a: Fauget@gmail.com
+                    <img src="../img/gmail.png" alt="icono de gmail">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h2>haz click en la parte de arriba↑</h2>
+          <p>!!Podras enterarte de como encontrarnos en cada red social!!</p>
+      </aside>
+    </div>
+</header>
+<footer class="footerInicio">
+  <div class="footerGmail">
+    <h3>Fauget@gmail.com 📩</h3>
+  </div>
+  <div>
+    <img class="logoFooter" src="../img/logo.png" alt="logo">
+  </div>
+  <div class="footerNum">
+    <h3>2343546565 📞</h3>
+  </div>
+</footer>
+     <!--dependecia a bootstrap-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

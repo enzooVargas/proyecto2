@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #faebd7;
+    background-image: url(../img/fondoCafeteria.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+.titulo{
+    color:#fefefe;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+}
+.logo{
+    width: 90px;
+    border-radius: 5px;
+}
+.bgNav{
+    background-color: #deb481;
+}
+.navbar{
+    border-radius: 10px;
+}
+.itemsBorder{
+    border-radius: 10px;
+}
+.navbar-nav .nav-link:hover {
+    color: #9e423b;
+  }
+.dropdown-menu .dropdown-item:hover{
+    color: #9e423b;
+}
+/*comienzo pagina de inicio*/
+.containerInicio { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.9fr 1.1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "main main"
+      "aside1 aside2";
+  }
+.mainInicio{ 
+    grid-area: main; 
+    background-color: #ffffff;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.mainInicio h1{
+    text-align: center;
+}
+/*comienza codigo de los aside de la pagina inicio*/
+.aside1Inicio{
+    background-color: #faebd7;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.aside1Inicio{
+    grid-area: aside1;
+}
+.aside1Inicio h1{
+    text-align: center;
+    margin-top: 20px;
+    background-color:#9e423b
+}
+.aside1Inicio h2{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #deb481;
+}
+.imgCafe{
+    margin-top: 30px;
+    text-align: center;
+}
+.imgCafe img{
+    width: 30rem;
+}
+.aside1Inicio p{
+text-align: center;
+padding: 10px;
+font-size: 17px;
+}
+.aside2Inicio {
+    grid-area: aside2;
+    background-color: #faebd7;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.aside2Inicio h1{
+text-align: center;
+margin-top: 20px;
+background-color: #deb481;
+}
+.aside2Inicio h2{
+    text-align: center;
+    margin-top: 20px;
+    background-color:#9e423b;
+}
+.aside2Inicio img{
+    width: 250px;
+}
+.aside2Inicio div{
+    border: double #9e423b 1px ;
+}
+.contenedorImg{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+.contenedorImg img{
+    opacity: .7;
+}
+.contenedorImg img:hover{
+    opacity: 1;
+}
+/*comienzo del footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    border-radius: 10px;
+    background-color: #deb481; 
+}
+.logoFooter{
+    width: 100px;
+    border-radius:50%;
+}
+.footerGmail{
+    margin-left:10px;
+    color: #9e423b;
+}
+.footerNum{
+    margin-right:10px;
+    color: #9e423b;
+}
+/*comienzo de pagina productos card*/
+.sectionCard, .segundasCards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    background-color:  #faebd7;
+    color:  #9e423b;
+}
+.mainProductos h5{
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #9e423b;
+    color: #000000;
+}
+.btn{
+    background-color: #c6a173; 
+}
+.btn:hover{
+    background-color: #9e423b;
+    color: #ffffff;
+}
+/*comienzo de pagina nosotros*/
+.container { 
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 0.9fr 1.1fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "main aside1"
+      "main aside2";
+  }
+.main {
+    grid-area: main;
+    background-color: #deb481;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.main{
+    text-align: center;
+}
+.subtituloVideo{
+   margin-top: 30px;
+   color: #9e423b;
+}
+.subtituloMapa{
+    margin-top: 26px;
+    color: #9e423b;
+}
+.iframeVideo{
+    margin-top: 15px;
+    text-align: center;
+}
+.parrafoVideo{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.iframeMapa{
+    text-align: center;
+    margin-top: 30px;
+}
+/*empieza codigo de los asides*/
+.aside1{
+    grid-area: aside1;
+}
+.aside2{
+    grid-area: aside2;
+}
+.aside1, .aside2{
+    background-color:  #deb481;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.aside1 h2{
+    text-align: center;
+    color: #9e423b;
+    margin-top: 25px;
+}
+.aside1 p{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.aside2 h2{
+    margin-top: 1rem;
+    text-align: center;
+    color: #9e423b;
+}
+.aside2 p{
+    text-align: center;
+}
+.audio{
+    text-align: center;
+    margin-top: 40px;
+}
+.team{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/*comienzo pagina de contactos*/
+.contenedor{  
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 1px;
+    grid-template-areas:
+      "main aside1"
+      "main aside2";
+  }
+.mainContactos{
+    grid-area: main;
+    background-color: #faebd7;
+    margin-top:1rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+}
+.mainContactos section{
+    text-align: center;
+    font-size: 1rem;
+}
+.mainContactos h1{
+    color: #000000;
+    background-color: #9e423b;
+    border-radius: 10px;
+}
+.mainContactos p{
+    font-size: 20px;
+    color: #000000;
+}
+.boton{
+    margin-bottom: 20px;
+    color: #000000;
+    background-color:  #c6a173; 
+    padding: 5px;
+    border-radius: 10px;
+}
+.boton:hover{
+    background-color: #9e423b;
+    color: #ffffff;
+}
+.mainContactos label{
+    text-align: center;
+    color:#681c15;;
+    padding:5px;
+    font-size: 17px;
+}
+/*comienzo de los aside de la pagina de contactos*/
+.aside1Contactos{
+    grid-area: aside1;
+    margin: 17px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: #faebd7;
+}
+.aside1Contactos section{
+    margin-top: 20px;
+}
+.aside1Contactos h1{
+    text-align: center;
+    margin-top: 1px;
+    color: #000000;
+    background-color: #deb481;
+    border-radius: 10px;
+    
+}
+.aside1Contactos p{
+    text-align: center;
+    font-size: 20px;
+}
+.aside1Contactos table{
+    border: solid  #9e423b 2px ;
+}
+/*aside2 de la pagina de contactos*/
+.aside2Contactos{
+    margin: 10px;
+    background-color:  #faebd7;
+    border-radius: 10px;
+}
+.aside2Contactos h2 {
+    text-align: center;
+    color: #9e423b;
+}
+.aside2Contactos p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+/*empieza codigo de la pagina de testimonios*/
+.testimonios{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 40px;
+}
+.mainTestimonios img{
+    width: 300px;
+    border: solid #ffffff 4px;
+}
+.mainTestimonios h3{
+    color: #ffffff;
+    text-align: center;
+    background-color: #181717;
+    border-radius: 10px;
+}
+.mainTestimonios h1{
+    text-align: center;
+    color: #ffffff;
+}
+/*empiza codigo de media queries de la pagina de Inicio*/
+@media only screen and (max-width: 1170px) {
+    .containerInicio { 
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        gap: 5px ;
+        grid-template-areas:
+          "main"
+          "aside1"
+          "aside2";
+      }
+      .aside1Inicio{
+        margin-right: 20px;    
+    }
+      .aside2Inicio {
+        margin-left: 20px; 
+    }
+    .aside2Inicio img{
+        width: 25vw;/*agrande un poco la galeria asi se ve mejor*/
+    }
+    .contenedorImg{
+        margin-left: 10vw;
+    }
+    .aside1Inicio p{
+        font-size: 30px;
+        }
+  }
+  @media only screen and (max-width: 1045px) {
+    .contenedorImg{
+        margin-left: 10vw;
+    }
+  }
+  @media only screen and (max-width: 845px) {
+    .aside2Inicio img{
+        width: 30vw;
+    }
+    .contenedorImg{
+        margin-left: 18vw;
+    }
+  }
+  @media only screen and (max-width: 696px) {
+    .aside2Inicio img{
+        width: 30vw;
+    }
+    .contenedorImg{
+        margin-left: 15vw;
+    }
+  }
+  @media only screen and (max-width: 596px) {
+    .aside1Inicio p{
+        font-size: 20px;
+        }
+    .aside2Inicio img{
+        width: 20vw;
+    }
+    .contenedorImg{
+        margin-left: 13vw;
+    }
+}
+@media only screen and (max-width:500px){
+    .aside1Inicio, .aside2Inicio{
+        margin-right: 10vw;
+    }
+    .contenedorImg{
+        margin-left: 20vw;
+    }
+    .headerInicio{
+        width: 118vw;
+    }
+    .footerInicio{
+        width: 117vw;
+    }
+}
+ /*empiza codigo de media queries de la pagina de contactos*/
+@media only screen and (max-width:1200px){
+    .contenedor{  
+        display: grid;
+        grid-template-columns: 1fr;/*hago una sola columna para que quede todo uno abajo del otro*/
+        grid-template-rows: auto auto auto;/*hago tres filas para las tres etiquetas semanticas*/
+        grid-template-areas:
+          "main"
+          "aside1"
+          "aside2";
+      }
+      .mainContactos{
+        margin: 2vw;
+      }
+}
+@media only screen and (max-width:700px){
+    .mainContactos textarea{
+        width: 20vw;/*achico un poco la caja de comentario (simplemente por estetica)*/
+        height: 20vw;
+    }
+}
+
+
